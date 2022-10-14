@@ -1,0 +1,88 @@
+node-json-schema (0.4.0+~7.0.9-1) unstable; urgency=high
+
+  [ upstream ]
+  * new release
+    + disallow __proto__ property being used for schema default/coerce
+      and protect against constructor modification;
+      closes: bug#999765, thanks to Neil Williams;
+      CVE-2021-3918
+
+  [ Jonas Smedegaard ]
+  * simplify source helper script copyright-check
+  * update copyright info:
+    + use Reference field (not License-Reference);
+      tighten lintian overrides
+    + update coverage
+  * declare compliance with Debian Policy 4.6.0
+  * set urgency=high due to security fix
+  * remove executable bit on JavaScript library files
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 16 Nov 2021 17:59:10 +0100
+
+node-json-schema (0.3.0+~7.0.6-1) unstable; urgency=medium
+
+  [ upstream ]
+  * new release
+
+  [ Jonas Smedegaard ]
+  * track TypeScript type definitions in watch file
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 02 Jan 2021 05:58:59 +0100
+
+node-json-schema (0.2.5-1) unstable; urgency=medium
+
+  [ upstream ]
+  * new release(s)
+
+  [ Debian Janitor ]
+  * use secure copyright file specification URI
+  * build-depend on debhelper-compat (not debhelper)
+  * set upstream metadata fields:
+    Bug-Database Repository Repository-Browse Bug-Submit
+  * update Vcs-* fields
+  * set Multi-Arch: foreign
+
+  [ Jonas Smedegaard ]
+  * add git-buildpackage settings:
+    + use pristine-tar
+    + use signed tags
+    + filter-out any .git* files
+    + use DEP-14 git branch names
+  * rewrite watch file with file format 4,
+    using Github pattern,
+    dversionmangle=auto,
+    simplified regular expressions,
+    substitution strings, and usage comment
+  * rewrite long description based on upstream README
+  * stop build-depend on dh-buildinfo
+  * use package section javascript (not web)
+  * stop (build-)depend on nodejs
+  * use debhelper compatibility level 13 (not 12)
+  * add myself as uploader
+  * set Rules-Requires-Root: no
+  * drop anchor from upstream Homepage and Source URL
+  * add source helper script copyright-check
+  * install under /usr/share (not /usr/lib)
+  * declare compliance with Debian Policy 4.5.1
+  * write minimal autopkgtest inline,
+    annotate as superficial, and fix depend on nodejs
+  * generate html and plaintext documentation;
+    build-depend on pandoc
+  * rewrite copyright file,
+    listing correct upstream copyright holder
+    (which is different from upstream maintainer),
+    properly listing full verbatim license,
+    and licensing packaging part as GPL-3+
+    (I will not license my contributions as AFL-2.1,
+    and it is arguably fully rewritten)
+  * embed and install Node.js module @types/json-schema;
+    provide virtual package node-types-json-schema;
+    build-depend on jq
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 02 Jan 2021 03:39:11 +0100
+
+node-json-schema (0.2.3-1) unstable; urgency=low
+
+  * Initial release (Closes: #850401)
+
+ -- Amarpreet Arora <aroraak15.it@coep.ac.in>  Thu, 05 Jan 2017 07:17:56 +0000

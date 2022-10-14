@@ -1,0 +1,6 @@
+Test-Command:
+ nodejs -e "require('json-schema');"
+Depends:
+ node-json-schema,
+ nodejs,
+Restrictions: superficial
