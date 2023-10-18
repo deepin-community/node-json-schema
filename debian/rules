@@ -11,10 +11,10 @@ endif
 	dh $@
 
 %.html: %.md
-	pandoc --from gfm-raw_html --to html --standalone --output $@ $<
+	cmark-gfm $< > $@
 
 %.txt: %.md
-	pandoc --from gfm-raw_html --to plain --output $@ $<
+	cmark-gfm --to plaintext $< > $@
 
 override_dh_clean:
 	dh_clean -- $(DOCS)
