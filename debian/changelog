@@ -1,3 +1,23 @@
+node-json-schema (0.4.0+~7.0.11-1) unstable; urgency=medium
+
+  [ upstream ]
+  * new release of component @types/json-schema
+
+  [ Yadd ]
+  * Set upstream metadata fields: Security-Contact.
+  * Add ctype=nodejs to component(s)
+
+  [ Jonas Smedegaard ]
+  * declare compliance with Debian Policy 4.6.1
+  * generate documentation with cmark-gfm (not pandoc);
+    build-depend on cmark-gfm (not pandoc)
+  * update copyright info:
+    + update coverage
+    + use single Reference field for multiple entries
+  * fix lintian overrides
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 14 Aug 2022 09:17:03 +0200
+
 node-json-schema (0.4.0+~7.0.9-1) unstable; urgency=high
 
   [ upstream ]
